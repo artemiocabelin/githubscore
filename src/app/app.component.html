@@ -1,0 +1,11 @@
+<h1>GitHub Score</h1>
+
+<form (submit)="onSubmit()">
+    <label>Github Username: 
+        <input type="text" name="username" [(ngModel)]="score.username" />
+    </label>
+    <input type="submit" value="Calculate GithubScore">
+</form>
+
+<h1>Your Score: {{ outputScore }}</h1>
+<p>{{ message }}</p>
